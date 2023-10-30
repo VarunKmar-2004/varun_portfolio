@@ -1,146 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varun portfolio</title>
-    <!-- Link To CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Box Icons -->
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
- 
+    <meta charset="utf-8">
+    <title>module2-solution</title>
+    <style>
+        /*basic style*/
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    h1 {
+       margin-bottom: 15px;
+    text-align: center;
+    color: #ff4532;
+    font-size: 50px;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 3.5px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .sub1 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FFB6C1;
+
+    }
+
+    .sub2 {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FF0000;
+
+    }
+
+    .sub3 {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+         margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
+    </style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <header>
-        <a href="#" class="logo">Varun Portfolio</a>
- 
-        <div class="bx bx-menu" id="menu-icon"></div>
- 
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-            <div class="bx bx-moon" id="darkmode"></div>
-        </ul>
-    </header>
-    <!-- Home -->
- 
-    <section class="home" id="home">
-        <div class="social">
-            <a href="https://www.facebook.com/varun.cherry.927"><i class='bx bxl-facebook' ></i></a>
-            <a href="https://twitter.com/varun20"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://instagram.com/varun.7781?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram' ></i></a>
-            <a href="https://github.com/VarunKmar-2004"><i class='bx bxl-github' ></i></a>
-           
-        </div>
-        <div class="home-img">
-            <img src="background.png" alt="">
-        </div>
-        <div class="home-text">
-            <span>Hello, I'm</span>
-            <h1>Varun Kumar Sunkaraboina</h1>
-            <h2>Student</h2>
-            <p>my studies have provided me with broad proficiency in programming languages <br> and software development tools</p>
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
- 
-    </section>
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About Me</h2>
-            <span>Introduction</span>
-        </div>
-        <!-- About Content -->
-        <div class="about-container">
-            <div class="about-img">
-                <img src="prasu.jpg" alt="">
-            </div>
-            <div class="about-text">
-                <p>I am a IT student at Jawaharlal Nehru Technological University Gurajada Vizianagaram . Due to graduate in the coming months, I am eager to secure challenging roles in Software Industry.
-
-                    My studies have provided me with broad proficiency in programming languages and software development tools. Alongside this, I have developed sound communication skills while delivering presentations to large audiences at university. As such, I am confident that I can make an instant impact in engineering roles.
-                    
-                    My key skills include: c programming,HTML,basic CSS.</p>
-                <div class="information">
-                    <!-- Box 1 -->
-                    <div class="info-box">
-                        <i class='bx bxs-user' ></i>
-                        <span>Varun Kumar</span>
-                    </div>
-                    <!-- Box 2 -->
-                    <div class="info-box">
-                        <i class='bx bxs-phone' ></i>
-                        <span>+91 6300815971 &nbsp +91 9014589673</span>
-                    </div>
-                    <!-- Box 3 -->
-                    <div class="info-box">
-                        <i class='bx bxs-envelope' ></i>
-                        <span>varunkumarsunkaraboina@gmail.com</span>
-                    </div>
-                </div>
-                <a href="https://drive.google.com/file/d/1pT4UAtcJbU9L95mi6YY76WsZMn-3234d/view?usp=drivesdk" class="btn">Download Cv</a>
-            </div>
+    <h1>Our Menu</h1>
+    <section class="column-lg-4 colmn-md-6 colmn-sm-12">
+        <div>
+            <p class="sub1">Chicken</p>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>
         </div>
     </section>
-    <!-- Skills -->
-    <section class="skills" id="skills">
-        <div class="heading">
-            <h2>Skills</h2>
-            <span>My Skills</span>
+    <section class="column-lg-4 colmn-md-6 colmn-sm-12">
+        <div>
+            <p class="sub2">Beef</p>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
         </div>
-        <!-- Skills Content -->
-        
- 
     </section>
-   
-    
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="heading">
-            <h2>Contact</h2>
-            <span>Connect With Us</span>
+    <section class="column-lg-4 colmn-md-12 colmn-sm-12">
+        <div>
+            <p class="sub3">Sushi</p>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>
         </div>
-        <div class="contact-form">
-            <form action="https://formsubmit.co/varunkumarsunkaraboina@gmail.com" method="POST">
-                <input type="text" name="name" required placeholder="name">
-                <input type="email" name="gmail" required placeholder="your gmail id">
-            <input type="text" name="feedback" required placeholder="write feedback here">
-                <button type="submit">Send</button>
-            </form>
-       
-           
-
-
-
-       
-    </section>
-    <!-- Footer -->
-    <div class="footer">
-        <h2>varun portfolio</h2>
-        <div class="footer-social">
-            <a href="https://www.facebook.com/prasanth.cherry.927"><i class='bx bxl-facebook' ></i></a>
-            <a href="https://twitter.com/Prasanthcherr20"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://instagram.com/prasanth.7781?igshid=YmMyMTA2M2Y="><i class='bx bxl-instagram' ></i></a>
-            <a href="https://github.com/VarunKmar-2004"><i class='bx bxl-github' ></i></a>
-            
-        </div>
- 
-    </div>
-    
-    <!-- Copyright -->
-    <div class="copyright">
-        <p>Created By <a href="https://www.linkedin.com/in/naga-venkata-prasanth-naidu-malla-86ba3223b">varunkumar sunkaraboina</a></p>
-    </div>
- 
- 
- 
-    <!-- Link To JS -->
-    <script src="./js/script.js"></script>
 </body>
+
 </html>
